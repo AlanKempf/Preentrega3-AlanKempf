@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+}
+
+body{
+    height: 100vh;
+    background-color: whitesmoke;   
+}
+
+header{ 
+    background-color: rgb(252, 247, 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    list-style-type: none;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    
+}
+
+.logo img{
+    height: 110px;
+    cursor: pointer;
+}
+
+.logo img:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+
+/* navbar */
+
+.navbar{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.navbar > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    flex: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar > li{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.navbar > li:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+    text-decoration: underline;
+    background-color: white;
+    color: white;
+}
+
+.cherry{
+    width: 70%;
+    float: left;
+    position: relative;
+}
+
+.impalpable{
+     float: right;
+     width: 30%;
+     position: relative;
+     height: 100%;
+}
+
+.mainimg{
+    height: calc(100vh - 200px);
+    overflow: hidden;
+}
+
+.impalpable > img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.cherry > img{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+.card{
+    z-index: 10;
+    position: absolute;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 20px;
+}
+
+.leftcard{
+    top: 20px;
+    left: 20px;
+    color: black;
+    background-color: whitesmoke;
+    opacity: 50%;
+}
+
+.rightcard{
+   
+    left: 0px;
+    bottom: 50px;
+    color: white;
+    background-color: black;
+    bottom: 210px;
+    right: 80px;
+    opacity: 50%;
+}
+
+
+.texthomedark{
+    font-size: 24px;
+    color: whitesmoke;
+    margin-top: 30px;
+}
+
+.texthomelight{
+    font-size: 24px;
+    color: black;
+    margin-top: 30px;
+}
+
+
+/* ------------- contact css -----------*/
+
+
+
+.main__contact{
+    padding-left: 80px;
+    padding-top: 80px;
+    background-image: url(../img/german-desserts-14.jpg.webp) ;
+    height: calc(100vh - 200px);
+    background-repeat: no-repeat;
+    background: cover;
+}
+
+.form{
+    width: 250px;
+    background-color: rgba(245, 245, 245, 0.73);
+    padding-right: 320px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 20px auto;
+    margin-top: 0%;
+    border-radius: 20px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+
+.form__item{
+    margin: 5px;
+    font-size: medium;
+    border-radius: 5px;
+    background: rgb(rgb(206, 173, 173), rgb(165, 191, 165), rgb(108, 108, 118)); /*no funnciona, chequear clases*/
+    
+    
+}
+
+.form__message{
+    margin: 5px;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+.btn{
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form__tittle{
+    font-size: 36px;
+    margin: 5px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    text-align: center; /* no funciona, chequear*/
+}
+
+
+/* -------- FOOTER --------*/
+
+footer{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #101010;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+
+}
+
+.footer_text{
+    font-size: 24px;
+    color: white; /*chequear el align porque no funciona*/
+    align-items: center;
+}
+
+.end{
+    font-size: 16px;
+    color: white; 
+    align-items: center;
+}
+
+
+/*------ menu page -----*/
+
+
+.img-menu{
+    height: 200px;
+    width: 200px;
+}
+
+.box-container{
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 350px;
+    color: white;
+}
+
+.box-container{
+    padding: 50px 50px;
+    border: solid black;
+    width: 100%;
+    height: 1024px;
+}
+
+.box{
+    padding: 40px;
+    border: solid black;
+    height: 420px;
+    border-radius: 10px;
+    width: 500px;
+    background-color: rgb(57, 57, 57)
+    
+}
+
+.titulo-menu{
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 28px;
+}
+
+
+ /* --------- RESPONSIVE MOBILE ----------*/
+
+
+ /* ------- main page --------*/
+ @media only screen and (max-width:576px) {
+    .navbar{
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+        align-items: left;
+        justify-items: flex-start;
+        gap: 60px;
+        padding-left: 40px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vh;
+        overflow: scroll;
+    }
+
+    .cherry{
+        width: 576px;
+        height: 700px;
+    }
+
+    .impalpable{
+        width: 567px;
+        height: 1024px;
+    }
+
+    .leftcard{
+        padding: 10px;
+        width: 450px;
+    }
+
+    .rightcard{
+        bottom: 400px;
+    }
+
+ /* menu page responsive*/
+
+
+    .box-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        row-gap: 20px;
+        padding: 10px 35px;
+        padding-bottom: 120px;
+        border: solid black;
+        width: 576px;
+        height: fit-content;
+
+    }
+ 
+/* ------- CONTACTO PAGE ---------*/
+
+    .form{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    .main__contact{
+        background-image: url(../img/german-desserts-14.jpg.webp) ;
+        width: 576px;
+        height: 800px;
+    }
+
